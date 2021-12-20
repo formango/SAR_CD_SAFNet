@@ -15,8 +15,8 @@ if isempty(refImage)
     error('!!!Not exist reference map');
 end
 
-refImage(find(refImage>=128))=255;
-refImage(find(refImage<128))=0;
+%refImage(find(refImage>=128))=255;
+%refImage(find(refImage<128))=0;
 
 RI=refImage(:);
 TI=tstImage(:); 
